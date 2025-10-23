@@ -1,0 +1,46 @@
+
+header {
+
+    position: relative;
+    float: left;
+    background-color: blue;
+    width: 100%;
+
+}
+
+header i{
+    float: right;
+    position: relative;
+    display: block;
+}
+
+img{
+
+    position: relative;
+    float: left;
+    max-width: 150px;
+    float: left;
+   
+
+    
+}
+
+nav{
+    display: none;
+    
+   
+}
+
+.fa:hover nav{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
