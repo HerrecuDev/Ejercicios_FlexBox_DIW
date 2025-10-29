@@ -11,7 +11,10 @@
 body{
   margin: 0;
   
-  background: linear-gradient(
+  background-color: white;
+  @media (min-width: 1000px) {
+
+    background: linear-gradient(
 
     to right,
     #ff6b6b 10%,         /* rojo en el 10% del ancho */
@@ -23,13 +26,16 @@ body{
 
   );
 
+    
+  }
+
   
 }
 #contenedor{
 
   max-width: 1000px;
   margin: 0 auto;
-  background: white;
+  
   
 }
 
@@ -46,12 +52,7 @@ header {
     background-color: #5AEAFA;
     color: white;
 
-    padding: 20px 40px;
-    box-sizing: border-box;
-
-
-
-
+  
     /*Despues vista con padre*/
     @media(min-width : 580px) {
         display: flex; 
@@ -66,45 +67,48 @@ header {
 
 nav ul{
     /*Primero vista movil*/
-
+      
         display: flex;
-
-    /*Despues vista como padre*/
-
-    @media(min-width: 580px){
-
+        flex-direction: row;
         justify-content: space-between;
-            
+       
+        text-align: center;
+        list-style: none;
 
-           
-
-            
-    }
-
-
+     /*tablet*/
+  
+    /*A partir de aqui modo Ordenador*/
+    
 }
-
-header a{
-    text-decoration: none;
+nav ul li{
+   margin-left: 1rem;
+ 
 }
-
 
 
 main{
+
   display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  padding: 20px ,40px; /*Mismo padding que el header*/
-  box-sizing: border-box;
-  margin-top: 20px;
-  gap: 20px; /*Separacion entre el main y aside sin que afecte cuando pasa a modo movil*/
+  flex-direction: column-reverse;
+  margin-top: 10px;
 
+  
 
+    /*A partir de aqui modo Ordenador*/
+     @media (min-width : 780px) {
 
-   @media (min-width : 580px) {
-        
+      flex-direction:row;
+      
     }
 
+
+  
+}
+#servicios{
+  flex-basis: 60%; /*NO USAR NUNCA WIDHT*/
+  display: flex;
+  flex-direction: row;
+ 
   
 }
 
@@ -115,8 +119,19 @@ main div{
   flex-direction: row;
 
   justify-content: center;
+  margin-left: 5px;
 }
 
+aside{
+  flex-grow: 1;
+  background-color: #5AEAFA;
+  color: white;
+  
+
+}
+aside h2{
+  text-align: center;
+}
 
 
 #servicios{
@@ -135,51 +150,21 @@ main div{
   
   
 }
-
-.servicio1{
-  background-color: brown;
+.servicio{
   flex-grow: 1;
+}
+.servicio1{
+  background-color: red;
+  
 }
 .servicio2{
-  background-color: darkorchid;
-  flex-grow: 1;
+  background-color: yellow;
+  
 }
 .servicio3{
-  background-color: darkblue;
-  flex-grow: 1;
-}
-
-
-
-
-aside{
-  flex-grow: 1;
+  background-color: green;
   
-  display: flex;
-  flex-direction: column;
-  background-color: #5AEAFA;
-  color: white;
-  
-
-   @media (min-width : 580px) {
-    
-        
-    }
-
-
 }
-aside h2{
-  text-align: center;
-}
-
-
-li a{
-  color: blue;
- 
-}
-
-
-
 
 
 footer{
@@ -190,16 +175,6 @@ footer{
         text-align: center;
         padding: 20px;
         margin-top: 20px;
-
-
-    @media (min-width : 580px) {
-
-            
-        
-    }
-
-  
-  
   
 }
 
