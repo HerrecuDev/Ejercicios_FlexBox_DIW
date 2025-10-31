@@ -75,6 +75,8 @@ nav ul{
         text-align: center;
         list-style: none;
 
+
+
      /*tablet*/
   
     /*A partir de aqui modo Ordenador*/
@@ -105,7 +107,7 @@ main{
   
 }
 #servicios{
-  flex-basis: 60%; /*NO USAR NUNCA WIDHT*/
+  flex-basis: 200px; /*NO USAR NUNCA WIDHT*/
   display: flex;
   flex-direction: row;
  
@@ -119,7 +121,7 @@ main div{
   flex-direction: row;
 
   justify-content: center;
-  margin-left: 5px;
+  
 }
 
 aside{
