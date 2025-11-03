@@ -1,3 +1,13 @@
+*{
+  margin: 0px;
+  padding: 0px;
+
+
+
+}
+
+
+
 body{
   margin: 0;
   
@@ -58,16 +68,21 @@ nav ul{
   
 }
 
+
+
+
 nav ul li{
 
   display: flex;
-
- list-style: none;
+  flex-grow: 1;
+  list-style: none;
   
 }
 
 nav ul li a{
   text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
   
   
   background-color: red;
@@ -95,14 +110,14 @@ nav ul li a:hover{
 .menu1{
 
   /*Primero para dispositivos móviles*/
- 
+   border: 1px solid black;
  
  
   
 
   /*Versión web*/
   @media(min-width: 780px){
-
+  border: 1px solid black;
     
 
 
@@ -112,15 +127,17 @@ nav ul li a:hover{
 }
 
 
-
+/*Para el segundo menu con los iconos grandes :*/
 .menu2{
 
   /*Primero para dispositivos móviles*/
  
+ 
 
   /*Versión web*/
   @media(min-width: 780px){
-
+    background-color: red;
+ 
     
 
 
@@ -142,11 +159,13 @@ nav ul li a:hover{
 
 }
 .submenu{
-  display: none;
+ flex-direction: column;
+
+ display: none;
 }
 
 /*Para que aparezca el Submenu*/
-li .sub:hover .submenu{
+.sub:hover .submenu{
 
   display: block;
   position: absolute;
