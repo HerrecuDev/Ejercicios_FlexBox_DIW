@@ -12,7 +12,7 @@ body{
   margin: 0;
   
   background-color: white;
-  @media (min-width: 1000px) {
+  @media (min-width: 1250px) {
 
     background: linear-gradient(
 
@@ -43,26 +43,19 @@ body{
 
 
 
-nav ul{
-  background-color: #ff6b6b;
-  border: 1px solid black;
+.menu ul{
+  
+  
    /*Primero para dispositivos móviles*/
   display: flex;
   flex-direction: column;
   
-  
- 
- 
-  
-
+  background-color: #272EF5;
   /*Versión web*/
   @media(min-width: 780px){
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-
-    
-
 
   }
   
@@ -71,7 +64,7 @@ nav ul{
 
 
 
-nav ul li{
+.menu ul li{
 
   display: flex;
   flex-grow: 1;
@@ -79,14 +72,14 @@ nav ul li{
   
 }
 
-nav ul li a{
+.menu ul li a{
   text-decoration: none;
   flex-grow: 1;
   text-align: center;
   
   
-  background-color: red;
-  
+  background-color: #272EF5;
+  color: white;
 
 
    /*Versión web*/
@@ -101,106 +94,142 @@ nav ul li a{
 }
 
 
-nav ul li a:hover{
+.menu ul li a:hover{
 
-  background-color: white;
+  background-color: #27CCF5;
 
 
 }
-.menu1{
+.sub{
+  position: relative; /*Marco la posicion relativa del padre*/
+}
 
-  /*Primero para dispositivos móviles*/
-   border: 1px solid black;
+/*Desaparece el submenu del header*/
+.submenu li a{
  
  
+  display: none;
   
+}
 
-  /*Versión web*/
-  @media(min-width: 780px){
-  border: 1px solid black;
-    
-
-
-  
-
-  }
+/*Para que aparezca el Submenu*/
+.sub:hover .submenu li a{
+  border: black solid 2px;
+   display: block;
+   position: absolute; /*Posicion absoluta del padre*/
+   left: 0px;
+   top: 100%;
+   width: 100%;
   
 
 }
 
 
 /*Para el segundo menu con los iconos grandes :*/
-.menu2{
+.menu2 ul{
 
-  /*Primero para dispositivos móviles*/
- 
- 
+  /*Móvil*/
+  display: flex;
+  flex-direction: row;
+  list-style: none;
 
-  /*Versión web*/
-  @media(min-width: 780px){
-    background-color: red;
- 
-    
+  background-color: #272EF5;
 
 
-  }
-  
+  /*Web*/
+  @media(min-width:780px){
 
-}
-.menu3{
-
-  /*Primero para dispositivos móviles*/
-  
-  /*Versión web*/
-  @media(min-width: 780px){
-
-
+    justify-content: space-around;
 
   }
-  
-
-}
-.submenu{
- flex-direction: column;
-
- display: none;
-}
-
-/*Para que aparezca el Submenu*/
-.sub:hover .submenu{
-
-  display: block;
-  position: absolute;
-  
 
 
 }
-.menu4{
-
-  /*Primero para dispositivos móviles*/
+.menu2 ul li{
+  /*Para que se coloque al lado del texto los iconos*/
+  display: flex;
+}
+/*Aumentamos el tamaño de los iconos del segundo menu :*/
+.menu2 i{
+ 
+  font-size: 30px;
+  margin-right: 5%;
+  color: white;
   
-  /*Versión web*/
-  @media(min-width: 780px){
+}
+
+
+/*Header numero 4*/
+
+.iconos ul{
+
+    /*Movil*/
+    display: flex;
 
     
 
+    /*Colores*/
+    background-color: #272EF5;
+    color: white;
 
 
-  }
-  
+    @media(min-width: 780px){
+      flex-direction: row;
+      justify-content: right;
+      padding: 1rem;
+
+
+    }
+
+
 
 }
-.menu5{
 
-  /*Primero para dispositivos móviles*/
- 
-  /*Versión web*/
-  @media(min-width: 780px){
+.iconos ul i{
 
- 
+  font-size: 15px;
+  margin-right: 2%;
 
-
-  }
   
+}
 
+
+
+
+
+
+/*Header numero 5*/
+.menuIconos ul{
+
+    /*Movil*/
+
+    display: flex;
+    
+
+    /*Colores*/
+    background-color: #272EF5;
+    color: white;
+
+
+    @media(min-width: 780px){
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem;
+
+
+    }
+
+
+}
+
+.menuIconos ul li{
+
+  list-style: none;
+  
+}
+.menuIconos ul li a{
+
+  text-decoration: none;
+  color: white;
+  
 }
