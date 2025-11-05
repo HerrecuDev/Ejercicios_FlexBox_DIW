@@ -2,8 +2,6 @@
   margin: 0px;
   padding: 0px;
 
-
-
 }
 
 
@@ -42,8 +40,8 @@ body{
 
 
 
-
-.menu ul{
+/*LE ASIGNO MAYOR QUE PARA QUE SOLO HAGA ESTO PARA EL PRIMER UL*/
+.menu > ul{
   
   
    /*Primero para dispositivos móviles*/
@@ -56,6 +54,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+   
 
   }
   
@@ -93,36 +92,51 @@ body{
   
 }
 
-
+/*PARA EL SOMBREADO DE TODO*/
 .menu ul li a:hover{
 
   background-color: #27CCF5;
+ 
 
 
 }
+
+/*PARA REALIZAR EL SUBMENU*/
 .sub{
-  position: relative; /*Marco la posicion relativa del padre*/
+
+ position: relative;
+ display: block;
+ 
+
 }
 
-/*Desaparece el submenu del header*/
-.submenu li a{
- 
- 
-  display: none;
-  
-}
+
+
 
 /*Para que aparezca el Submenu*/
-.sub:hover .submenu li a{
-  border: black solid 2px;
-   display: block;
-   position: absolute; /*Posicion absoluta del padre*/
-   left: 0px;
-   top: 100%;
-   width: 100%;
+
+.submenu {
+
+  display: none;
+  position: absolute;
   
+  flex-direction: column;
+
+  top: 100%;
+  left: 0px;
+  width: 100%;
+
+ 
 
 }
+
+.sub:hover .submenu{
+  display: block;
+  background-color: #ff6b6b;
+}
+
+
+
 
 
 /*Para el segundo menu con los iconos grandes :*/
@@ -130,7 +144,7 @@ body{
 
   /*Móvil*/
   display: flex;
-  flex-direction: row;
+  
   list-style: none;
 
   background-color: #272EF5;
@@ -138,8 +152,9 @@ body{
 
   /*Web*/
   @media(min-width:780px){
-
-    justify-content: space-around;
+    
+    
+   flex-direction: row;
 
   }
 
@@ -148,6 +163,9 @@ body{
 .menu2 ul li{
   /*Para que se coloque al lado del texto los iconos*/
   display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  color: white;
 }
 /*Aumentamos el tamaño de los iconos del segundo menu :*/
 .menu2 i{
@@ -156,6 +174,14 @@ body{
   margin-right: 5%;
   color: white;
   
+}
+
+/*Para el sombreado del menu*/
+.menu2 ul :hover{
+
+  background-color: #27CCF5;
+
+
 }
 
 
@@ -200,7 +226,7 @@ body{
 
 /*Header numero 5*/
 .menuIconos ul{
-
+ 
     /*Movil*/
 
     display: flex;
@@ -216,7 +242,7 @@ body{
       justify-content: space-between;
       padding: 1rem;
 
-
+       
     }
 
 
@@ -224,12 +250,34 @@ body{
 
 .menuIconos ul li{
 
+  display: flex;
   list-style: none;
+  flex-grow: 1;
+    border: black solid 2px;
+  justify-content: center;
+
+  @media(min-width: 780px){
+
+    
+  }
   
 }
 .menuIconos ul li a{
 
   text-decoration: none;
+  
   color: white;
+
+  
+ 
+  
+}
+
+
+.menuIconos ul i{
+
+  font-size: 15px;
+  margin-right: 2%;
+
   
 }
