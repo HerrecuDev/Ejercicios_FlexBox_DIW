@@ -7,25 +7,25 @@
 
 
 body{
-  margin: 0;
-  
-  background-color: white;
-  @media (min-width: 1250px) {
-
-    background: linear-gradient(
-
-    to right,
-    #ff6b6b 10%,         /* rojo en el 10% del ancho */
-    #ffffff 10%,         /* fondo blanco en el centro */
-    #ffffff 90%,         /* mantiene blanco hasta el 90% */
-    #ffa94d 90%          /* naranja en el 10% derecho */
-
-
-
-  );
-
+    margin: 0;
     
-  }
+    background-color: white;
+    @media (min-width: 1250px) {
+
+      background: linear-gradient(
+
+      to right,
+      #ff6b6b 10%,         /* rojo en el 10% del ancho */
+      #ffffff 10%,         /* fondo blanco en el centro */
+      #ffffff 90%,         /* mantiene blanco hasta el 90% */
+      #ffa94d 90%          /* naranja en el 10% derecho */
+
+
+
+    );
+
+      
+    }
 
   
 }
@@ -44,17 +44,17 @@ body{
 .menu > ul{
   
   
-   /*Primero para dispositivos móviles*/
-  display: flex;
-  flex-direction: column;
-  justify-items: left;
+      /*Primero para dispositivos móviles*/
+      display: flex;
+      flex-direction: column;
+      justify-items: left;
 
-  background-color: #272EF5;
-  /*Versión web*/
-  @media(min-width: 780px){
-    flex-direction: row;
-    justify-content: space-between;
-  }
+      background-color: #272EF5;
+      /*Versión web*/
+      @media(min-width: 780px){
+        flex-direction: row;
+        justify-content: space-between;
+      }
   
 }
 
@@ -72,23 +72,23 @@ body{
 }
 
 .menu ul li a{
-  text-decoration: none;
- 
-  flex-grow: 1;
-  text-align: center;
-  
- 
-  background-color: #272EF5;
-  color: white;
+      text-decoration: none;
+    
+      flex-grow: 1;
+      text-align: center;
+      
+    
+      background-color: #272EF5;
+      color: white;
 
 
-   /*Versión web*/
-  @media(min-width: 780px){
+      /*Versión web*/
+      @media(min-width: 780px){
 
-    padding: 1rem;
+        padding: 1rem;
 
 
-  }
+      }
   
   
 }
@@ -107,13 +107,13 @@ body{
   
 
 
-@media(min-width: 780px){
- position: relative;
- display: block;
+    @media(min-width: 780px){
+    position: relative;
+    display: block;
 
-}
+    }
 
- 
+    
 
 }
 
@@ -125,17 +125,17 @@ body{
 .submenu{
 
   
-  position: absolute;
-  flex-direction: column;
+    position: absolute;
+    flex-direction: column;
 
-  top: 100%;
-  left: 0px;
-  width: 100%;
+    top: 100%;
+    left: 0px;
+    width: 100%;
 
-  @media(min-width: 780px){
+    @media(min-width: 780px){
 
-     display: none;
-  }
+      display: none;
+    }
 
  
 
@@ -155,27 +155,27 @@ body{
 /*Para el segundo menu con los iconos grandes :*/
 .menu2 ul{
 
-  /*Móvil*/
-  display: flex;
-  flex-direction: column;
-  
-  list-style: none;
+      /*Móvil*/
+      display: flex;
+      flex-direction: column;
+      
+      list-style: none;
 
-  background-color: #272EF5;
+      background-color: #272EF5;
 
-  @media(min-width:480px){
-    flex-wrap: wrap;
-    
-  }
+      @media(min-width:480px){
+        flex-wrap: wrap;
+        
+      }
 
 
-  /*Web*/
-  @media(min-width:780px){
-    
-    
-   flex-direction: row;
+      /*Web*/
+      @media(min-width:780px){
+        
+        
+      flex-direction: row;
 
-  }
+      }
 
 
 }
@@ -208,23 +208,23 @@ body{
 
 .menu4 ul{
 
-    /*Movil*/
-    display: flex;
-    justify-content: right;
+        /*Movil*/
+        display: flex;
+        justify-content: right;
 
-    /*Colores*/
-    background-color: #272EF5;
-    color: white;
-    /*tamaño*/
-     padding: 1rem;
+        /*Colores*/
+        background-color: #272EF5;
+        color: white;
+        /*tamaño*/
+        padding: 1rem;
 
-    @media(min-width: 780px){
-      flex-direction: row;
-      justify-content: right;
-     
+        @media(min-width: 780px){
+          flex-direction: row;
+          justify-content: right;
+        
 
 
-    }
+        }
 
 
 
@@ -279,11 +279,11 @@ body{
 .sub1{
 
 
-@media(min-width: 780px){
- position: relative;
- display: block;
+    @media(min-width: 780px){
+    position: relative;
+    display: block;
 
-}
+    }
 
  
 
@@ -296,16 +296,16 @@ body{
 
 .submenu1{
 
-  position: absolute;
-  flex-direction: column;
-  top: 100%;
-  left: 0px;
-  width: 100%;
+      position: absolute;
+      flex-direction: column;
+      top: 100%;
+      left: 0px;
+      width: 100%;
 
-  @media(min-width: 780px){
+      @media(min-width: 780px){
 
-     display: none;
-  }
+        display: none;
+      }
 
 }
 
@@ -319,9 +319,9 @@ body{
 
 .menu5 ul li i{
 
-  color: white;
-  padding: 0.75rem;
- 
+    color: white;
+    padding: 0.75rem;
+  
   
 }
 
