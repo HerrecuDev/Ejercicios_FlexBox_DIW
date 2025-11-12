@@ -163,28 +163,39 @@ body{
 
       background-color: #272EF5;
 
+     /*Tablet y web*/
       @media(min-width:480px){
-        flex-wrap: wrap;
-        
-      }
-
-
-      /*Web*/
-      @media(min-width:780px){
         
         
       flex-direction: row;
+      flex-wrap: wrap;
 
       }
 
 
 }
 .menu2 ul li{
-  /*Para que se coloque al lado del texto los iconos*/
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+  
   color: white;
+  display: flex;
+  flex-direction: row;
+
+
+  @media screen and (min-width:480px){
+
+    flex-basis: calc(100%/2);
+    
+
+  }
+
+   @media screen and (min-width:780px){
+
+    flex-basis: calc(100%/4);
+    
+
+  }
+  
+  
 }
 /*Aumentamos el tamaño de los iconos del segundo menu :*/
 .menu2 i{
